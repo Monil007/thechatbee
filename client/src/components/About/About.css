@@ -1,0 +1,82 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.aboutOuterContainer {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  /* background-color: #1a1a1d; */
+  background: url(../../assets/beehive.png);
+  background-size: cover;
+}
+
+.aboutInnerContainer {
+  width: 80%;
+  height: 70%;
+  background-color: #fff;
+  margin-top: 30px;
+  border: 1px solid navy;
+}
+
+.aboutInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+  /* background-color: rgb(255, 215, 103); */
+}
+
+.aboutHeading {
+  color: rgb(255, 215, 103);
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 8600;
+  font-size: 3em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  font-family: Georgia;
+}
+
+.aboutAuthor {
+  color: black;
+  font-size: 1.5rem;
+  font-family: Georgia;
+}
+
+.aboutPara,
+.aboutOl,
+.aboutUl {
+  color: black;
+  font-family: Georgia;
+}
+
+.hr {
+  border: 1px solid rgb(255, 215, 103);
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* .aboutOuterContainer {
+    height: 100%;
+  } */
+
+  .aboutInnerContainer {
+    width: 90%;
+    height: 90%;
+  }
+}

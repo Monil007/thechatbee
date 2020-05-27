@@ -9,6 +9,7 @@
   padding: 5%;
   width: 80%;
   font-size: 1.2em;
+  /* background-color: rgb(255, 215, 103); */
 }
 
 input:focus,
@@ -21,7 +22,7 @@ select:focus {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #2979ff;
+  background: navy;
   padding: 20px;
   display: inline-block;
   border: none;

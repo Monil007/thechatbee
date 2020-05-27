@@ -1,21 +1,26 @@
 .textContainer {
   display: flex;
+  text-align: left;
   flex-direction: column;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   color: white;
-  height: 60%;
-  justify-content: space-between;
+  /* height: 60%; */
+  /* justify-content: left; */
 }
 
 .activeContainer {
   display: flex;
-  align-items: center;
+  align-items: left;
   margin-bottom: 50%;
+  background-color: navy;
+  width: 400px;
+  margin-top: 20px;
 }
 
 .activeItem {
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 
 .activeContainer img {
@@ -27,7 +32,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 1200px) {
-  .textContainer {
+  /* .textContainer {
     display: none;
-  }
+  } */
 }

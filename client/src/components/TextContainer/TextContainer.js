@@ -6,7 +6,7 @@ import "./TextContainer.css";
 
 const TextContainer = ({ users }) => (
   <div className="textContainer">
-    <div>
+    {/* <div>
       <h1>
         Realtime Chat Application{" "}
         <span role="img" aria-label="emoji">
@@ -25,20 +25,18 @@ const TextContainer = ({ users }) => (
           ⬅️
         </span>
       </h2>
-    </div>
+    </div> */}
     {users ? (
-      <div>
-        <h1>People currently chatting:</h1>
-        <div className="activeContainer">
-          <h2>
-            {users.map(({ name }) => (
-              <div key={name} className="activeItem">
-                {name}
-                <img alt="Online Icon" src={onlineIcon} />
-              </div>
-            ))}
-          </h2>
-        </div>
+      <div className="activeContainer">
+        <h4>Online:</h4>
+        <h4>
+          {users.map(({ name }) => (
+            <div key={name} className="activeItem">
+              <img classname="activeImg" alt="Online Icon" src={onlineIcon} />
+              &nbsp; {name}
+            </div>
+          ))}
+        </h4>
       </div>
     ) : null}
   </div>
